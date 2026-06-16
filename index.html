@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Nexio | Front-End Developer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,900&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header-modern">
+        <div class="nav-container">
+            <div class="logo-area">
+                <h2>Nexio</h2>
+            </div>
+            
+            <button class="mobile-menu-toggle" id="menuToggle" aria-label="Menu" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="nav-right" id="navRight">
+                <div class="nav-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#service">Services</a>
+                    <a href="#price">Pricing</a>
+                    <a href="#faq">FAQ</a>
+                </div>
+                <button class="btn-sign" id="signupBtn">
+                    Sign Up
+                </button>
+            </div>
+        </div>
+    </header>
+
+  <!-- HOME -->
+  <section class="home-section" id="home">
+    <div class="hero-content animate-on-scroll">
+        <span class="hero-badge">
+            Next Generation SaaS
+        </span>
+        <h1>
+            Build Modern Digital Experiences
+        </h1>
+        <p>
+          We build modern digital experiences through clean design, intuitive interfaces, and 
+          powerful technology.
+        </p>
+        <div class="hero-buttons">
+          <a href="#contact">
+            <button class="glass-btn">Get Started</button>
+          </a>
+          <a href="#service">
+            <button class="outline-btn">Learn More</button>
+          </a>
+        </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about-us" id="about">
+    <div class="about">
+        <div class="left-part animate-on-scroll">
+            <h2>Building simple and powerful digital solutions</h2>
+        </div>
+        <div class="right-part animate-on-scroll delay-1">
+            <p>We create modern digital products that are fast, scalable, and easy to use.
+                Our mission is to help businesses and individuals achieve more through clean 
+                design and innovative technology. 
+                By combining creativity, performance, and user-centered experiences, we
+                build solutions that inspire growth, simplify everyday challenges, and create
+                meaningful digital experiences for people around the world.
+            </p>
+        </div>
+    </div>
+  </section>
+
+  <!-- SERVICE / TIMELINE -->
+  <section class="service" id="service">
+    <div class="section-header animate-on-scroll">
+      <h2 class="section-title">Our Process</h2>
+      <p class="section-subtitle">From idea to launch — here's how we work</p>
+    </div>
+
+    <div class="timeline">
+
+      <!-- ITEM 1 -->
+      <div class="item animate-on-scroll">
+        <div class="text">
+          <h3>Planning</h3>
+          <p>We dive deep into your goals and map out a clear roadmap before writing a single line of code.</p>
+        </div>
+        <div class="line">
+          <span class="dot"></span>
+        </div>
+        <div class="icon">
+          <i class="fa-solid fa-lightbulb"></i>
+        </div>
+      </div>
+
+      <!-- ITEM 2 (REVERSED) -->
+      <div class="item reverse animate-on-scroll delay-1">
+        <div class="icon">
+          <i class="fa-solid fa-code"></i>
+        </div>
+        <div class="line">
+          <span class="dot"></span>
+        </div>
+        <div class="text">
+          <h3>Development</h3>
+          <p>Our engineers build fast, accessible, and beautifully crafted interfaces tailored to your needs.</p>
+        </div>
+      </div>
+
+      <!-- ITEM 3 -->
+      <div class="item animate-on-scroll delay-2">
+        <div class="text">
+          <h3>Launch</h3>
+          <p>We ship, monitor, and iterate — ensuring your product succeeds from day one and beyond.</p>
+        </div>
+        <div class="line">
+          <span class="dot"></span>
+        </div>
+        <div class="icon">
+          <i class="fa-solid fa-rocket"></i>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Wrapper for the pricing section -->
+<section class="pricing-table" id="price">
+  <div class="wrapper">
+
+    <!-- Page title -->
+    <h2 class="section-title">Our Process</h2>
+      <p class="section-subtitle">From idea to launch — here's how we work</p>
+
+    <!-- Plans container -->
+    <div class="plans-grid">
+        
+      <!-- Starter Plan -->
+      <div class="plan-card">
+        <!-- Price and description -->
+        <div class="pricing-details">
+          <span>18</span>
+          <p>Perfect to get started</p>
+        </div>
+        <!-- Features list -->
+        <ul class="features">
+          <li><i class="fas fa-check"></i>Basic website setup</li>
+          <li><i class="fas fa-check"></i>Responsive design</li>
+          <li><i class="fas fa-check"></i>Up to 3 pages</li>
+          <li><i class="fas fa-check"></i>Email support</li>
+          <li><i class="fas fa-check"></i>Free consultation</li>
+          <li><i class="fas fa-check"></i>Delivery in 3 days</li>
+        </ul>
+        <!-- Action button -->
+        <button class="main-btn">Choose Starter</button>
+      </div>
+
+      <!-- Pro Plan (Highlighted) -->
+      <div class="plan-card highlight">
+        <div class="pricing-details">
+          <span>19</span>
+          <p>Best choice for professionals</p>
+        </div>
+        <ul class="features">
+          <li><i class="fas fa-check"></i>Custom UI design</li>
+          <li><i class="fas fa-check"></i>Fully responsive layout</li>
+          <li><i class="fas fa-check"></i>Up to 7 pages</li>
+          <li><i class="fas fa-check"></i>SEO friendly structure</li>
+          <li><i class="fas fa-check"></i>Priority support</li>
+          <li><i class="fas fa-check"></i>Delivery in 5 days</li>
+        </ul>
+        <button class="main-btn">Choose Pro</button>
+      </div>
+
+      <!-- Premium Plan -->
+      <div class="plan-card">
+        <div class="pricing-details">
+          <span>20</span>
+          <p>For growing brands & teams</p>
+        </div>
+        <ul class="features">
+          <li><i class="fas fa-check"></i>Advanced UI/UX design</li>
+          <li><i class="fas fa-check"></i>Unlimited pages</li>
+          <li><i class="fas fa-check"></i>Performance optimization</li>
+          <li><i class="fas fa-check"></i>SEO + accessibility ready</li>
+          <li><i class="fas fa-check"></i>24/7 support</li>
+          <li><i class="fas fa-check"></i>Delivery in 7 days</li>
+        </ul>
+        <button class="main-btn">Choose Premium</button>
+      </div>
+
+    </div>
+  </div>
+  </section>
+  <!-- FAQ -->
+<section class="faq-section" id="faq">
+  <div class="section-header animate-on-scroll">
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    <p class="section-subtitle">Everything you need to know before getting started</p>
+  </div>
+  <div class="faq-wrapper">
+
+    <div class="faq">
+      <button class="faq-question">How long does it take to deliver a project? <span class="faq-icon">+</span></button>
+      <div class="faq-answer">Delivery time depends on the plan. Starter: 3 days, Pro: 5 days, Premium: 7 days.</div>
+    </div>
+
+    <div class="faq">
+      <button class="faq-question">Do you offer revisions after delivery? <span class="faq-icon">+</span></button>
+      <div class="faq-answer">Yes! All plans include at least one revision round. Premium clients get unlimited revisions within 30 days.</div>
+    </div>
+
+    <div class="faq">
+      <button class="faq-question">What technologies do you use? <span class="faq-icon">+</span></button>
+      <div class="faq-answer">We work with HTML5, CSS3, JavaScript (React, Vue, Next.js), and backend frameworks based on your needs.</div>
+    </div>
+
+    <div class="faq">
+      <button class="faq-question">Can I upgrade my plan later? <span class="faq-icon">+</span></button>
+      <div class="faq-answer">Absolutely! You can upgrade anytime. We'll apply the price difference and adjust scope accordingly.</div>
+    </div>
+
+    <div class="faq">
+      <button class="faq-question">Is there a free consultation? <span class="faq-icon">+</span></button>
+      <div class="faq-answer">Yes, all plans include a free initial consultation before we start any work.</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <h3>Nexio</h3>
+      <p>We build modern digital experiences through clean design, intuitive interfaces, and powerful technology.</p>
+      <div class="footer-social">
+        <a class="social-btn" href="#">𝕏</a>
+        <a class="social-btn" href="#">in</a>
+        <a class="social-btn" href="#">⌥</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#service">Services</a></li>
+        <li><a href="#price">Pricing</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Support</h4>
+      <ul>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Status</a></li>
+      </ul>
+    </div>
+    <div class="footer-col footer-newsletter">
+      <h4>Stay Updated</h4>
+      <p>Get the latest updates delivered to your inbox.</p>
+      <div class="newsletter-form">
+        <input type="email" placeholder="Your email address" />
+        <button>Subscribe</button>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Nexio. All rights reserved.</p>
+    <div class="footer-bottom-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+  <script src="script.js"></script>  
+</body>
+</html>
